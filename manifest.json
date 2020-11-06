@@ -1,0 +1,26 @@
+{
+  "name": "Chrome Bug Id 930685",
+  "manifest_version": 2,
+  "version": "0.1.0",
+  "description": "reduced test case",
+  "permissions": [
+    "webRequest",
+    "<all_urls>"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}
